@@ -9,5 +9,5 @@ class ContactForm(forms.Form):
             }
         )
     )
-    email   = forms.EmailField()
-    content = forms.CharField()
+    email = forms.EmailField()
+    content = forms.CharField(widget=forms.Textarea())
